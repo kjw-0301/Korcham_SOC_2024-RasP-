@@ -91,8 +91,9 @@ void ISR_G()
 void E_Stop()
 {
 	printf("Emergency STOP!!\n");
+	stop_state = 1;
 	digitalWrite(8,0);
 	digitalWrite(9,0);
 	digitalWrite(7,0);
-	stop_state = 1;
+	//stop_state = 1;
 }
